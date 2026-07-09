@@ -1,0 +1,52 @@
+{
+  "name": "aso-audit-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that audits & optimizes App Store and Google Play metadata (ASO): score a listing, check character limits, and clean up the iOS keyword field. By ASO Agency.",
+  "homepage": "https://asoagency.io",
+  "type": "module",
+  "bin": {
+    "aso-audit-mcp": "src/index.js"
+  },
+  "main": "src/engine.js",
+  "exports": {
+    ".": "./src/engine.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "model-context-protocol",
+    "claude",
+    "aso",
+    "app-store-optimization",
+    "app-store",
+    "google-play",
+    "keywords",
+    "metadata",
+    "aso-agency"
+  ],
+  "author": "ASO Agency (https://asoagency.io)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ataygamesmode-ops/aso-audit-mcp.git"
+  },
+  "bugs": {
+    "url": "https://asoagency.io/contact"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/smoke.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.8"
+  }
+}

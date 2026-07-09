@@ -1,0 +1,11 @@
+# Smithery deployment config (https://smithery.ai)
+# Local stdio server launched via npx. Adjust to match Smithery's current
+# schema if their docs have changed since submission.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+    additionalProperties: false
+  commandFunction: |-
+    (config) => ({ command: "npx", args: ["-y", "aso-audit-mcp"] })
